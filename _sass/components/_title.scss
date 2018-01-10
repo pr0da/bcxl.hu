@@ -1,8 +1,10 @@
 .Title__Intro {
+  display: block;
   @include responsive-font(3.125vw, 20px, 24px, 20px);
 }
 
 .Title__Main {
+  display: block;
   font-weight: bold;
   line-height: 1.2;
   @include responsive-font(16vw, 80px, 122px, 100px);
