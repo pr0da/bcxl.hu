@@ -6,10 +6,8 @@
 
 .Hero__Year {
   @include media(">tablet") {
-    width: 1em;
-    transform: rotate(-90deg);
-    transform-origin: right;
-    margin-right: -.4em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
   }
 }
 
