@@ -1,0 +1,12 @@
+.Logo {
+  padding: 1.6rem 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  border-radius: $border-radius-base;
+  background-color: $color-brand;
+  color: $white;
+  @include responsive-font(10vw, 46px, 76px, 50px);
+}

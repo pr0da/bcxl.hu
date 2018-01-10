@@ -1,0 +1,7 @@
+.Year {
+  line-height: 1;
+  font-size: 160px;
+  font-weight: bold;
+  color: #9FA1A4;
+  @include responsive-font(20vw, 130px, 153px, 140px);
+}

@@ -1,0 +1,18 @@
+.Hero {
+  @include media(">tablet") {
+    display: flex;
+  }
+}
+
+.Hero__Year {
+  @include media(">tablet") {
+    width: 1em;
+    transform: rotate(-90deg);
+    transform-origin: right;
+    margin-right: -.4em;
+  }
+}
+
+.Hero__Title {
+  flex: 1;
+}

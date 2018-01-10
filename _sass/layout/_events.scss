@@ -1,0 +1,18 @@
+.Events--desktop {
+  display: none;
+  @include media(">tablet") {
+    margin: 0 -.5em;
+    display: flex;
+  }
+}
+
+.Events--mobile {
+  @include media(">tablet") {
+    display: none;
+  }
+}
+
+.Events__Column {
+  padding: .5em;
+  flex: 1;
+}

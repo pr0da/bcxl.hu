@@ -2,25 +2,32 @@
 layout: default
 ---
 
-<div class="home">
+{% include header.html %}
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+<main class="page-content" aria-label="Content">
+  <div class="Events Events--desktop">
+      <div class="Events__Column">
+        {% for event in site.events %}
+          {% capture parity %}{% cycle 'odd', 'even' %}{% endcapture %}
+          {% if parity == 'odd' %}
+          {% include event.html event=event index=forloop.index %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="Events__Column">
+        {% for event in site.events %}  
+          {% capture parity %}{% cycle 'odd', 'even' %}{% endcapture %}
+          {% if parity == 'even' %}
+          {% include event.html event=event index=forloop.index %}
+          {% endif %}
+        {% endfor %}
+      </div>
+  </div>
+  <div class="Events Events--mobile">
+    {% for event in site.events %}  
+      {% include event.html event=event index=forloop.index %}
     {% endfor %}
-  </ul>
+  </div>    
+</main>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+{% include footer.html %}

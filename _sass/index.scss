@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$font-family-base: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$font-family-quote: cursive; 
+$font-size-base:   16px;
+$font-weight-base: 400;
+$font-size-small:  $font-size-base * 0.875;
+$line-height-base: 1.5;
+
+$spacing-unit:     30px;
+
+$border-radius-base: 8px;
+
+$white: #FFF;
+$color-text:       #231F20;
+$color-background: #FFFFFF;
+$color-brand:      #ED1C24;
+$event-colors: (
+  #EC008C,
+  #FFF200,
+  #8DC63F,
+  #00AEFF,
+  #2E3192,
+  #ED1C24
+);
+
+// Width of the content area
+$content-width: 768px;
+
+// Import partials.
+@import
+  "mixins/include-media",
+  "mixins/color-yig",
+  "mixins/responsive-font",
+  "initial/webfonts",
+  "initial/base",
+  "layout/container",
+  "layout/hero",
+  "layout/events",
+  "layout/footer",
+  "components/logo",
+  "components/title",
+  "components/year",
+  "components/event",
+  "utility"
+;

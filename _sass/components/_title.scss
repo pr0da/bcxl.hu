@@ -1,0 +1,17 @@
+.Title__Intro {
+  @include responsive-font(3.125vw, 20px, 24px, 20px);
+}
+
+.Title__Main {
+  font-weight: bold;
+  line-height: 1.2;
+  @include responsive-font(16vw, 80px, 122px, 100px);
+}
+
+.Title__Rest {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.2;
+  @include responsive-font(6vw, 30px, 46px, 40px);
+}
