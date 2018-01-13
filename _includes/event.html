@@ -5,5 +5,13 @@
     </h2>
     <div class="Event__Duration">{{ include.event.duration }}</div>
     <div class="Event__Body">{{ include.event.content }}</div>
+    <div>
+      {% if include.event.facebook %}
+        <a class="Event__Link" href="{{include.event.facebook}}" title="Facebook" target="_blank">{% include facebook.svg %}</a>
+      {% endif %}
+      {% if include.event.signup %}
+        <a class="Event__Link" href="{{include.event.signup}}" title="Regisztráció" target="_blank">{% include google-form.svg %}</a>
+      {% endif %}
+    </div>
   </div>
 </section>
