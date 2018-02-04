@@ -16,7 +16,7 @@
 title: A Nagy (XL) Jubileumi Kollégiumi Fesztivál
 email: your-email@example.com
 description: A 40 éves bolyai Club szervezésével
-baseurl: "/bcxl.hu" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pr0da.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: hu
 
